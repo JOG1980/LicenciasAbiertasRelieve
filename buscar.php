@@ -312,7 +312,8 @@ $fecha_anio_actual = date('Y'); //año actual
   
   <div id="tabs-2">
   
-	<button id="btn_generar_csv_licencias_anteriores">Generar CSV de Licencias antes del <span class="anio_actual"></span></button>
+	<!--button id="btn_generar_csv_licencias_anteriores">Generar CSV de Licencias antes del <span class="anio_actual"></span></button-->
+	<button id="btn_generar_csv_licencias_anteriores" class="boton_csv"><image src="images\csv_icon2.png" />Licencias antes del <span class="anio_actual"></span></button>
 
 	<table id='tabla_licencias_anteriores' class='table tabla_res my_table'>
 		<thead>
@@ -347,7 +348,8 @@ $fecha_anio_actual = date('Y'); //año actual
   <!-- end TAB-3-------------------------------------------------------------------------------------------------------->
   <div id="tabs-3">
           
-  <button id="btn_generar_csv_licencias_anio_actual_antes_rango_fechas">Generar CSV de Licencias del <span class="anio_actual"></span> antes del rango de fechas</button>
+  <!--button id="btn_generar_csv_licencias_anio_actual_antes_rango_fechas">Generar CSV de Licencias del <span class="anio_actual"></span> antes del rango de fechas</button-->
+  <button id="btn_generar_csv_licencias_anio_actual_antes_rango_fechas" class="boton_csv"><image src="images\csv_icon2.png" />Licencias del <span class="anio_actual"></span> antes del rango de fechas</button>
   
   	<table id='tabla_licencias_este_anio_antes_de_rango' class='table tabla_res my_table'>
 		<thead>
@@ -381,7 +383,9 @@ $fecha_anio_actual = date('Y'); //año actual
   <!-- end TAB-3-------------------------------------------------------------------------------------------------------->
   <div id="tabs-4">
   
-  <button id="btn_generar_csv_licencias_anio_actual_en_rango_fechas">Generar CSV de Licencias del <span class="anio_actual"></span> en Rango de fechas</button>
+  <!--button id="btn_generar_csv_licencias_anio_actual_en_rango_fechas">Generar CSV de Licencias del <span class="anio_actual"></span> en Rango de fechas</button -->
+  <button id="btn_generar_csv_licencias_anio_actual_en_rango_fechas" class="boton_csv"><image src="images\csv_icon2.png" />Licencias del <span class="anio_actual"></span> en Rango de fechas</button>
+  
   <table id='tabla_licencias_este_anio_en_rango' class='table tabla_res my_table'>
 		<thead>
 			<tr>

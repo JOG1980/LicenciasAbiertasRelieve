@@ -67,6 +67,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve/buscar.php",
+			"settings":
+			{
+				"buffer_size": 12812,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -100,13 +109,13 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve2",
-		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve2/bootstrap-4.6.0-dist",
-		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve2/config",
-		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve2/jquery"
+		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve"
 	],
 	"file_history":
 	[
+		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve2/buscar.php",
+		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve/buscar.php",
+		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve/css/buscar.css",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve2/my_js/buscar.js",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve2/getDBSolicitudes.php",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/LicenciasAbiertasRelieve2/config/config_zotgm.php",
@@ -127,7 +136,6 @@
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieveVencidas2/getDBSolicitudes.php",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieveVencidas2/my_js/generar_descargar_tabla_CSV.js",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieveVencidas2/js/buscar.js",
-		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve2/buscar.php",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve2/getDBSolicitudes.php",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve2/getDBPrecarga.php",
 		"/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve2/getDBSubestaciones.php",
@@ -170,8 +178,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/BusquedaSolicitudesRelieve/buscar.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

@@ -170,8 +170,13 @@ $( function() {
 						contenido_tabla+="<td>"+records[i].RESPONSIBLE_FOR_WORK_EMP_ID+"</td>";
 						contenido_tabla+="<td>"+(records[i].LICENSE_TYPE_ID==2?'EMERGENCIA':'PROGRAMADA')+"</td>";
 
-						contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\""+records[i].LICENSE_ID+"\",\""+records[i].LICENSE_NUM+"\");'>P</div></td>";
-						
+						//contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\""+records[i].LICENSE_ID+"\",\""+records[i].LICENSE_NUM+"\");'></div></td>";
+						contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\"" +records[i].LICENSE_ID+"\",\""
+																																				+records[i].LICENSE_NUM+"\",\""
+																																				+records[i].SUBSTATION_NAME+"\",\""
+																																				+records[i].EQP_TYPE+" "+records[i].EQP_SHORT_NAME+"\",\""
+																																				+records[i].ESPECIALIDAD+"\",\""
+																																				+records[i].WORK_OBJECTIVES+"\");'></div></td>";
 						contenido_tabla+="</tr>"; 
 
 					}//end for
@@ -202,8 +207,13 @@ $( function() {
 						contenido_tabla+="<td>"+records[i].RESPONSIBLE_FOR_WORK_EMP_ID+"</td>";
 						contenido_tabla+="<td>"+(records[i].LICENSE_TYPE_ID==2?'EMERGENCIA':'PROGRAMADA')+"</td>";
 
-						contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\""+records[i].LICENSE_ID+"\",\""+records[i].LICENSE_NUM+"\");'></div></td>";
-
+						//contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\""+records[i].LICENSE_ID+"\",\""+records[i].LICENSE_NUM+"\");'></div></td>";
+						contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\"" +records[i].LICENSE_ID+"\",\""
+																																				+records[i].LICENSE_NUM+"\",\""
+																																				+records[i].SUBSTATION_NAME+"\",\""
+																																				+records[i].EQP_TYPE+" "+records[i].EQP_SHORT_NAME+"\",\""
+																																				+records[i].ESPECIALIDAD+"\",\""
+																																				+records[i].WORK_OBJECTIVES+"\");'></div></td>";
 						contenido_tabla+="</tr>";
 				 
 					}//end for
@@ -247,8 +257,13 @@ $( function() {
 						contenido_tabla+="<td>"+records[i].RESPONSIBLE_FOR_WORK_EMP_ID+"</td>";
 						contenido_tabla+="<td>"+(records[i].LICENSE_TYPE_ID==2?'EMERGENCIA':'PROGRAMADA')+"</td>";
 
-						contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\""+records[i].LICENSE_ID+"\",\""+records[i].LICENSE_NUM+"\");'></div></td>";
-
+						//contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\""+records[i].LICENSE_ID+"\",\""+records[i].LICENSE_NUM+"\");'></div></td>";
+						contenido_tabla+="<td><div class='contador_reprog my_link' id='"+records[i].LICENSE_ID+"' onclick='mostrarProrrogas(\"" +records[i].LICENSE_ID+"\",\""
+																																				+records[i].LICENSE_NUM+"\",\""
+																																				+records[i].SUBSTATION_NAME+"\",\""
+																																				+records[i].EQP_TYPE+" "+records[i].EQP_SHORT_NAME+"\",\""
+																																				+records[i].ESPECIALIDAD+"\",\""
+																																				+records[i].WORK_OBJECTIVES+"\");'></div></td>";
 						contenido_tabla+="</tr>";
 					}
 				}
@@ -787,9 +802,10 @@ $( function() {
 
 
 
-function mostrarProrrogas(id_lic,num_lic){
+function mostrarProrrogas(id_lic,num_lic, se, eq, dep, trabajos){
 
 	var contador=0;
+	//recorremos en toda la tabla de prorrogas 
 	$( "#tabla_prorrogas tbody tr" ).each(function( index ) {
 		
 		 var c_lic = $(this).attr("proroga_lic");
@@ -807,7 +823,9 @@ function mostrarProrrogas(id_lic,num_lic){
 	});
 
 	//$('#modal_contenedor_prorrogas span .p_num_lic').text(num_lic);
-	$(".p_num_lic").html(num_lic);
+	//var datos_lic = num_lic ;
+	var datos_lic = num_lic +" ("+ se + " " + eq + ")<br />" + dep + "<br />" + trabajos;
+	$(".p_num_lic").html(datos_lic);
 
 	$('#modal_contenedor_prorrogas').modal('show');	
 }

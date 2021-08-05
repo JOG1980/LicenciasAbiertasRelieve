@@ -48,3 +48,10 @@
 	text-align: center;
 }
 
+
+.boton_csv {
+  border-radius: 10px;
+  /*background: #73AD21;*/
+  padding: 7px;
+}
+
