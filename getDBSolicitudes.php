@@ -73,6 +73,11 @@ if( isset($_POST['datos'])&& !empty($_POST['datos'])  ){
 	$busqueda_fecha_ini = $datos->busqueda_fecha_ini;
 	$busqueda_fecha_fin = $datos->busqueda_fecha_fin;
 
+	//$fecha_anio_actual = date('Y'); //año actual
+	$anio_actual = substr($busqueda_fecha_ini,0,4);
+	$anio_anterior = intval($anio_actual)-1;
+	//busqueda_fecha_ini;
+
 	//AGREGAMOS ARCHIVO DE CONFIGURACION
 	require "config\\config_zotgm.php";
 	require "config\\config_zotptx.php";

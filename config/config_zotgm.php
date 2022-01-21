@@ -45,7 +45,7 @@
 								   AND 
 								   SUBSTR(RESPONSIBLE_FOR_WORK_EMP_ID, 1,7) ='" . $zona_transmision . "' 
 								   AND 
-									PLANNED_SDATE <= to_date('2020-12-31','yyyy-MM-dd') 
+									PLANNED_SDATE <= to_date('".$anio_anterior."-12-31','yyyy-MM-dd') 
 									AND 
 									INSTR(RESPONSIBLE_FOR_WORK_EMP_ID, 'T', 1, 1) = 1      -- SE O
 								    AND LIC_REMOVAL_DATE IS NULL                           -- sin fecha de retiro 
@@ -94,8 +94,8 @@
 											    AND 
 											    SUBSTR(RESPONSIBLE_FOR_WORK_EMP_ID, 1,7) ='" . $zona_transmision . "' 
 											    AND 
-												PLANNED_SDATE >= to_date('2021-01-01','yyyy-MM-dd') 
-												 AND 
+												PLANNED_SDATE >= to_date('".$anio_actual."-01-01','yyyy-MM-dd')
+												AND 
 												PLANNED_SDATE < to_date('".$busqueda_fecha_ini."','yyyy-MM-dd')
 												AND 
 												INSTR(RESPONSIBLE_FOR_WORK_EMP_ID, 'T', 1, 1) = 1      -- SE O

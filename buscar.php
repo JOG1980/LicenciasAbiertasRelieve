@@ -89,7 +89,7 @@ $fecha_anio_actual = date('Y'); //año actual
 <input type="hidden" id="fecha_busqueda_fin_default" value="<?php echo $fecha_busqueda_fin_default; ?>" />
 <input type="hidden" id="fecha_anio_actual" value="<?php echo $fecha_anio_actual; ?>" />
 
-
+<?php echo 'fffff'.$anio_actual; ?>
 
 <!--div id="wait" style="display:block; position:absolute; top:50%; left:50%; border-radius: 25px; text-align: center; width:150px; height:150px; background-color: black;  padding:2px; z-index: 10000; padding: 30px 30px 30px 30px;"-->
 <div id="wait" style="display:block; position:absolute; top:0%; left:0%; width: 100%; height:100%; z-index: 10000;">
